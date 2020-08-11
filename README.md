@@ -1,2 +1,2 @@
 # BallBoy
-This project is simulating a cricket ball as a bowler at different speed, spin and flight for a practice match.
+This project is simulating the trajectory of a cricket ball, taking into account the angular velocity, linear acceleration and linear velocity taken from the ABB Robot Hand Manipulator data and estimated from Lucas-Kanade Optical Flow. The dynamics of the ball is influenced by the friction of the ground which changes the state of the ball when the ball hits. Moreover when the ball gets hit the other side i.e. by the batsman, estimating the 6 dimensional impulse and 3 dimensional force given by the batsman to that ball, one can iterate the following trajectory after being hit. 
